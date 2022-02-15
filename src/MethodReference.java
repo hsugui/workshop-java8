@@ -12,20 +12,29 @@ public class MethodReference {
                 .filter(s -> s.startsWith("J"))
                 .collect(Collectors.toList());
 
-        // Java 7
-//        Cat.meow(); // propriedade estatica dentro da classe
-//        System.out.println();
-//
-//        // Java 8 Lambda
-//        result.forEach(s -> {
-//            Cat.meow();
-//        });
-//        System.out.println();
+        for (String s : result) {
+            System.out.println(s);
+        }
 
-        // Java 8
-        result.forEach(Cat::meow); // erro pq espera parametro
-        System.out.println();
+        result.forEach(s -> System.out.println(s));
+
         result.forEach(System.out::println);
+
+        System.out.println();
+
+        // Java 7
+        Cat.meow();
+        System.out.println();
+
+        // Java 8 Lambda
+        result.forEach(s -> {
+            Cat.scratch(s);
+        });
+        System.out.println();
+
+        // Java 8 - Method Reference
+        result.forEach(Cat::scratch);
+
     }
 
 }

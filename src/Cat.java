@@ -1,7 +1,11 @@
 public class Cat {
 
-    public static void meow(String s) {
-        System.out.println("O gatinho fez miau para... " + s);
+    public static void scratch(String s) {
+        System.out.println("O gato arranhou " + s);
+    }
+
+    public static void meow() {
+        System.out.println("meoooooow ");
     }
 
 }
