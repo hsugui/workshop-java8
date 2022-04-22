@@ -39,19 +39,5 @@ public class Streams {
                     }
                 });
 
-
-
-
-// deletar essa parte se ja tiver
-//        list.stream()
-//                .filter(s -> s.startsWith("J"))
-//                .collect(Collectors.toList());
-//
-//        System.out.println(result + "\n");
-//
-//        result.forEach(System.out::println); // method reference
-
-
-
     }
 }

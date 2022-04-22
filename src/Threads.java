@@ -5,6 +5,8 @@ public class Threads {
         //Ex. 1 - Threads
 
         // Java 7
+
+        // criar uma classe que será usada uma só vez e que implementa uma interface
         new Thread(new Runnable() {
             @Override
             public void run() {
